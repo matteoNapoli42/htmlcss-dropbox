@@ -1,3 +1,5 @@
+/* COMMON ZONE*/
+
 *{
     margin: 0;
     padding: 0;
@@ -6,4 +8,126 @@
 
 body{
     font-family: 'Fredoka', sans-serif;
+}
+
+/* DEBUG ZONE*/
+
+.debug header{
+    height: 80px;
+    background-color: black;
+}
+
+.debug .logo_zone, .button_zone{
+    background-color: chocolate;
+    height: 80px;
+}
+
+.debug .jumbotron{
+    height: 826px;
+    background-color: var( --drbx-bkgr-and-square6);
+}
+
+.debug .jumbo-card{
+    background-color: red;
+    height: 795px;
+}
+
+.debug [class^='col-']{
+    background-color: green;
+    height: 468px;
+    border: 5px solid;
+}
+
+.debug .container-sc{
+    height: 1505;
+    background-color:   #cb1ccb ;
+}
+
+
+/* UTILITY ZONE*/
+
+:root {
+    --drbx-black: #010001;
+    --drbx-white: #FFFFFF;
+    --drbx-bkgr-and-square6: #B5D0E6;
+    --drbx-accent: #0160FF;
+    --drbx-square1: #A3D39A;
+    --drbx-square2-alternativeFont: #60092B;
+    --drbx-square3: #0192CE;
+    --drbx-square4: #FE1C1D;
+    --drbx-big-square: #F5F4F4;
+    --drbx-square5: #D4011F;
+    --drbx-square7: #0D2580;
+    --drbx-square8: #FED831;
+}
+
+.lat-padd{
+    padding-left: 101px;
+    padding-right: 101px;
+}
+
+.container-sc{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.col-8{
+    width: calc(100% / 12*8);
+}
+
+.col-4{
+    width: calc(100% / 12*4);
+}
+
+.col-3{
+    width: calc(100% / 12*3);
+}
+
+.d-flex{
+    display: flex;
+}
+
+.f-end{
+    align-items: flex-end;
+}
+
+
+/* HEADER ZONE*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_zone, .button_zone{
+    width: 30%;
+}
+
+/* MAIN ZONE */
+
+
+/* JUMBO ZONE*/
+.jumbotron{
+    margin: 0 auto;
+}
+
+.jumbo-card{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#jumbo-title{
+    font-size: 700%;
+    padding-top: 4.5rem;
+    padding-bottom: 4rem;
+}
+.row{
+    flex-direction: row;
+}
+/* END JUMBO ZONE*/
+
+.container-sc{
+    width: 60%;
+    margin: 0 auto;
 }
