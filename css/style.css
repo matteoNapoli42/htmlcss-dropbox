@@ -20,7 +20,7 @@ ul{
     background-color: black;
 }
 
-.debug .logo_zone, .button_zone{
+.debug .lateral-nav{
     background-color: chocolate;
     height: 80px;
 }
@@ -107,7 +107,6 @@ ul{
     border: 1px;
     border-color: grey;
     border-style:ridge;
-   
 }
 
 .gap{
@@ -124,15 +123,39 @@ ul{
 }
 
 /* HEADER ZONE*/
-
+header{
+    padding-bottom: 1.5rem;
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo_zone, .button_zone{
+.lateral-nav{
     width: 30%;
+}
+
+#logo-zone{
+    margin-top: 1.5rem;
+    margin-left: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#login-zone{
+    margin-top: 1.5rem;
+    justify-content: space-around;
+}
+
+#login-zone button{
+    width: 100%;
+    padding: 5px 1rem;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -171,7 +194,7 @@ nav{
 
 #pd-arrow{
     position: absolute; 
-    bottom: 10rem;
+    bottom: 11rem;
     font-size: 300%;
 }
 
@@ -226,7 +249,7 @@ nav{
     width: 80%;
     max-width: 240px;
     margin: 0 auto;
-    padding: 5px;
+    padding: 10px;
     background-color: var(--drbx-accent);
     color: white;
 }
@@ -236,7 +259,7 @@ nav{
 }
 
 #special-sub{
-    
+    width: 100%;
     margin-top: 5rem;
 }
 
@@ -246,7 +269,7 @@ nav{
 
 #contact-button{
     position: absolute;
-    right: 10rem;
+    right: 30rem;
 }
 
 
