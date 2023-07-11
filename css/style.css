@@ -10,6 +10,9 @@ body{
     font-family: 'Fredoka', sans-serif;
 }
 
+ul{
+    list-style: none;
+}
 /* DEBUG ZONE*/
 
 .debug header{
@@ -23,7 +26,7 @@ body{
 }
 
 .debug .jumbotron{
-    height: 826px;
+    height: 734px;
     background-color: var( --drbx-bkgr-and-square6);
 }
 
@@ -34,12 +37,12 @@ body{
 
 .debug [class^='col-']{
     background-color: green;
-    height: 468px;
+    height: 600px;
     border: 5px solid;
 }
 
 .debug .container-sc{
-    height: 1505;
+    height: 1505px;
     background-color:   #cb1ccb ;
 }
 
@@ -68,19 +71,19 @@ body{
 
 .container-sc{
     width: 60%;
+    max-width: 997px;
     margin: 0 auto;
 }
 
+.row{
+    width: 130%;
+}
 .col-8{
     width: calc(100% / 12*8);
 }
 
 .col-4{
-    width: calc(100% / 12*4);
-}
-
-.col-3{
-    width: calc(100% / 12*3);
+    width: 33%;
 }
 
 .d-flex{
@@ -91,6 +94,26 @@ body{
     align-items: flex-end;
 }
 
+.s-between{
+    justify-content: space-between;
+}
+
+.d-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.bord-style{
+    border: 1px solid grey;
+}
+
+.gap{
+    gap: 2rem;
+}
+
+.f-size{
+    font-size: 270%;
+}
 
 /* HEADER ZONE*/
 
@@ -104,30 +127,176 @@ nav{
     width: 30%;
 }
 
+
 /* MAIN ZONE */
 
 
 /* JUMBO ZONE*/
 .jumbotron{
-    margin: 0 auto;
+    margin: auto;
+    background-color: #b4cfe5;
+    height: 700px;
 }
 
 .jumbo-card{
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
+    padding-top: 4rem;
 }
 
 #jumbo-title{
-    font-size: 700%;
+    font-size: 500%;  
+}
+#jumbo-freet{
     padding-top: 4.5rem;
-    padding-bottom: 4rem;
+    font-size: larger;
 }
-.row{
-    flex-direction: row;
+
+#jumbo-img{
+    height: 500px;
+    padding-top: 4rem;
 }
+
+#free-trial{
+    margin: 1.5rem 0rem;
+}
+
+#pd-arrow{
+    position: absolute; 
+    bottom: 10rem;
+    font-size: 300%;
+}
+
 /* END JUMBO ZONE*/
 
+/* SUBSCRIPTION ZONE*/
 .container-sc{
-    width: 60%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 15rem auto;
+    max-width: 997px;
 }
+
+#sub-options{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    display: block;
+}
+
+#sub-options>span{
+    font-size: larger;
+}
+
+#annual{
+    margin-left: 5rem;
+}
+
+#plans{
+    margin-top: 5rem;
+    gap: 3rem;
+    width: 100%;
+}
+
+.customer{
+    width: 100%;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+.one-third{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons{
+    width: 80%;
+    max-width: 240px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: var(--drbx-accent);
+    color: white;
+}
+
+#special-sub{
+    margin-top: 5rem;
+}
+
+.sub-padd{
+    padding: 0.5rem;
+}
+
+
+/* END SUBSCRIPTION ZONE*/
+
+/* FIRST SECTION ZONE*/
+
+#findPartner-img{
+    height: 500px;
+}
+#findPartner{
+    padding-top: 2.5rem;
+    gap: 2.5rem;
+}
+
+#partner-button{
+    width: 40%;
+    padding: 5px;
+    border: solid black 2px;
+    background-color: white;
+}
+/* END FIRST SECTION ZONE*/
+
+/* SECOND SECTION ZONE*/
+
+#ssec-title{
+    margin-bottom: 4.5rem;
+}
+
+/* END SECOND SECTION ZONE*/
+
+
+/* FAMOUS USERS ZONE*/
+
+/* END FAMOUS USERS ZONE*/
+
+
+
+/* FREE TRIAL ZONE */
+#free-trial-2{
+    background-color: #b4d0e7;
+    position: relative;
+    padding: 140px 0px;
+}
+
+#free-trial-2 h1{
+    margin-right: 7rem;
+}
+
+#free-trial-2 button{
+    position: absolute;
+    top: 10rem;
+    padding: 10px;
+    background-color: white;
+    width: 33%;
+}
+/* END FREE TRIAL ZONE */
+
+/* FOOTER*/
+footer{
+    background-color: black;
+    color: white;
+    padding-bottom: 10rem;
+}
+
+.footer-list h1{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-list a{
+    color: white;
+    text-decoration: none;
+    line-height: 2rem;
+}
+/*END FOOTER*/
