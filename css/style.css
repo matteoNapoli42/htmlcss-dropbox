@@ -104,7 +104,10 @@ ul{
 }
 
 .bord-style{
-    border: 1px solid grey;
+    border: 1px;
+    border-color: grey;
+    border-style:ridge;
+   
 }
 
 .gap{
@@ -113,6 +116,11 @@ ul{
 
 .f-size{
     font-size: 270%;
+}
+
+.cubes{
+    width: 50%;
+    height: 50%;
 }
 
 /* HEADER ZONE*/
@@ -199,7 +207,12 @@ nav{
 .customer{
     width: 100%;
     text-align: center;
-    border: 1px solid grey;
+    border-top: 1px;
+    border-right: 1px;
+    border-left: 1px;
+    border-bottom: 0px;
+    border-color: grey;
+    border-style: ridge;
 }
 
 .one-third{
@@ -218,12 +231,22 @@ nav{
     color: white;
 }
 
+.sub-padding-bot{
+    padding-bottom: 3.5rem;
+}
+
 #special-sub{
+    
     margin-top: 5rem;
 }
 
 .sub-padd{
     padding: 0.5rem;
+}
+
+#contact-button{
+    position: absolute;
+    right: 10rem;
 }
 
 
@@ -257,6 +280,8 @@ nav{
 
 
 /* FAMOUS USERS ZONE*/
+
+
 
 /* END FAMOUS USERS ZONE*/
 

@@ -8,12 +8,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DropBox Main Page</title>
 </head>
-<body >
+<body>
     <header>
-        <nav class="d-flex"> 
-            <div class="logo_zone"></div>
+        <nav> 
+            <div class="lateral-nav">
+                <ul class="d-flex" id="logo-zone">
+                    <li><img src="/img/logo-small.png" alt=""></li>
+                    <li><a href="#">Perchè Dropbox</a></li>
+                    <li><a href="#">Funzioni</a></li>
+                    <li><a href="#">Piani e prezzi</a></li>
+                </ul>
+            </div>
             <div class="central_zone"></div>
-            <div class="button_zone"></div>
+            <div class="lateral-nav">
+                <ul class="d-flex " id="login-zone">
+                    <li><a href="">Supporto</a></li>
+                    <li><a href="#">Contatta l'ufficio vendite</a></li>
+                    <li><a href="#">Accedi</a></li>
+                    <li><button class="buttons" id="start-button"> Inizia</button></li>
+                </ul>
+
+            </div>
         </nav>
     </header>
 
@@ -60,9 +75,10 @@
                     </span>
                 </div>
                 
-                <!-- FIRST SUBSCRIPTION PLAN-->
+                <!--SUBSCRIPTION PLANS-->
                 <div class="row d-flex" id="plans"> 
-                    <div class="col-4 bord-style">
+                     <!--FIRST SUBSCRIPTION PLAN-->
+                    <div class="col-4">
                          <div class="customer">
                              <span>
                                 <i class="fa-solid fa-user"></i>
@@ -70,7 +86,7 @@
                             </span>
                         </div>
 
-                        <div class="sub-padd">
+                        <div class="sub-padd bord-style sub-padding-bot">
                             <div class="one-third">
                                 <h2>Professional</h2>
                                 <strong>12,00€</strong>
@@ -109,22 +125,19 @@
                                     Cartelle offline su dispositivi mobili
                                 </span>
                             </div>
-
                         </div>
-
-                        
                     </div>
                     <!-- END FIRST SUBSCRIPTION PLAN-->
                     
                     <!-- SECOND SUBSCRIPTION PLAN-->
-                    <div class="col-4 bord-style">
+                    <div class="col-4 ">
                         <div class="customer">
                             <span>
                                 <i class="fa-solid fa-people-group"></i>
                                    Team
                                </span>
                         </div>
-                        <div class="sub-padd">
+                        <div class="sub-padd bord-style">
                             <div class="one-third">
                                 <h2>Advanced</h2>
                                <strong>18.00€</strong>
@@ -167,14 +180,14 @@
                      <!-- END SECOND SUBSCRIPTION PLAN-->
                     
                      <!-- THIRD SUBSCRIPTION PLAN-->
-                     <div class="col-4 bord-style">
+                     <div class="col-4 ">
                         <div class="customer">
                             <span>
                                 <i class="fa-solid fa-user"></i>
                                     Singolo
                                </span>
                         </div>
-                        <div class="sub-padd">
+                        <div class="sub-padd bord-style">
                             <div class="one-third">
                                 <h2>Professional</h2>
                                <strong>12,00€</strong>
@@ -222,9 +235,20 @@
                         <i class="fa-solid fa-building"></i>
                         Team
                     </div>
-                    <div class="bord-style">
-                        <h3>Enterprise</h3>
-                       <strong>Contatta l'ufficio vendite per i prezzi</strong> 
+                    <div class="bord-style" style="padding: 2.5rem;">
+                        <div class="col-8 d-col gap">
+                            <div>
+                                <h3>Enterprise</h3>
+                                <br>
+                                <strong>Contatta l'ufficio vendite per i prezzi</strong>
+                            </div>
+                            <span>
+                                Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella 
+                                gestione su qualsiasi scala
+                            </span> 
+                            <button class="buttons" id="contact-button">Contatta l'ufficio vendite</button>
+                        </div>
+                        
                     </div>
                     <!-- Da completare-->
                 </div>
@@ -331,8 +355,28 @@
          </section>
          <!-- END THIRD SECTION-->
          
-         <!-- PARTNER SHOW-->
-         <!-- END PARTNER SHOW-->
+         <!-- PARTNER SHOW
+            <div>
+                <div class="col-4 ">
+                    <div class="d-flex">
+                        <div class="cubes" id="c1">
+                            <img src="/img/designit.svg" alt="">
+                        </div>
+                        <div class="cubes" id="c2">
+                            <img src="/img/arizona_state_university.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="d-flex" id="c3">
+                        <div class="cubes">
+                            <img src="/img/designit.svg" alt="">
+                        </div>
+                        <div class="cubes" id="c1">
+                            <img src="/img/arizona_state_university.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+         END PARTNER SHOW-->
 
          <!--FREE TRIAL-->
          <div style="background-color: #b4cfe5;">
