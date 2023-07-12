@@ -13,7 +13,7 @@
         <nav class="d-flex s-between">  
             <div class="lateral-nav">
                 <ul class="d-flex" id="logo-zone">
-                    <li><img src="./img/logo-small.png" alt=""></li>
+                    <li><a href="#"><img src="./img/logo-small.png" alt=""></a></li>
                     <li><a href="#">Perchè Dropbox</a></li>
                     <li><a href="#">Funzioni</a></li>
                     <li><a href="#">Piani e prezzi</a></li>
@@ -25,7 +25,7 @@
                     <li><a href="">Supporto</a></li>
                     <li><a href="#">Contatta l'ufficio vendite</a></li>
                     <li><a href="#">Accedi</a></li>
-                    <li><a  href="#" class="buttons opacity" id="start-button"> Inizia</a></li>
+                    <li><a  href="#" class="buttons opacity" id="start-link"> Inizia</a></li>
                 </ul>
             </div>
         </nav>
@@ -64,15 +64,15 @@
                 <h1 class="f-size">
                     Trova il piano business che fa per te
                 </h1>
-                <div class="d-flex" id="sub-options">
-                    <span>
-                        <input type="radio">
-                        Fatturazione mensile
-                    </span>
-                   <span>
-                        <input type="radio" id="annual">
-                        Fatturazione annuale
-                    </span>
+                <div class="d-flex gap" id="sub-options">
+                    <div class="d-flex">
+                        <div class="mon-sub"></div>
+                        <span>Fatturazione Mensile</span>
+                    </div>
+                    <div class="d-flex">
+                        <div class="year-sub"></div>
+                        <span>Fatturazione Annuale</span>
+                    </div>
                 </div>
                 
                 
@@ -86,7 +86,7 @@
                             </span>
                         </div>
 
-                        <div class="sub-padd bord-style ">
+                        <div class="sub-padd bord-style subscription-min-height ">
                             <div class="one-fourth d-col">
                                 <h2>Professional</h2>
                                 <strong>12,00€</strong>
@@ -137,7 +137,7 @@
                                    Team
                                </span>
                         </div>
-                        <div class="sub-padd bord-style">
+                        <div class="sub-padd bord-style subscription-min-height">
                             <div class="one-fourth d-col">
                                 <h2>Advanced</h2>
                                <strong>18.00€</strong>
@@ -196,11 +196,11 @@
                     <div class="col-4 ">
                         <div class="customer">
                             <span>
-                                <i class="fa-solid fa-user"></i>
+                                <i class="fa-solid fa-building"></i>
                                     Singolo
                                </span>
                         </div>
-                        <div class="sub-padd bord-style">
+                        <div class="sub-padd bord-style subscription-min-height">
                             <div class="one-fourth d-col">
                                 <h2>Enterprise</h2>
                                <strong>Contattaci</strong>
@@ -364,7 +364,7 @@
          <section class="container-sc">
             <div class="col-8 d-col gap">
                 <h1 class="f-size">Più di 500.000 team utilizzano Dropbox Business</h1>
-                <a href="#">Scopri di più sui nostri clienti</a>
+                <a href="#" class="color-blue-links">Scopri di più sui nostri clienti</a>
             </div>
          </section>
          <!-- END THIRD SECTION-->
@@ -452,8 +452,6 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium pariatur, nemo reprehenderit perspiciatis, molestias voluptatibus facere nihil neque voluptatum fuga sed veritatis aut eos non id corrupti tenetur sunt.
                     </p>
                 </div>
-               
-                <hr>
                 <div class="faq">
                     <h4 class="d-flex s-between">
                         Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?
@@ -463,7 +461,6 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium pariatur, nemo reprehenderit perspiciatis, molestias voluptatibus facere nihil neque voluptatum fuga sed veritatis aut eos non id corrupti tenetur sunt.
                     </p>
                 </div>
-                <hr>
                 <div class="faq">
                     <h4 class="d-flex s-between">
                         Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?
@@ -473,7 +470,6 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint at iusto itaque qui dolores quis, nulla molestiae nobis a officiis nesciunt veritatis amet natus repellat ea, ut tenetur deserunt corrupti!
                     </p>
                 </div>
-                <hr>
             </div>
          <!-- END Q&A-->
     </main>
@@ -533,9 +529,9 @@
             <div class="jumbo-card">
                 <hr style="width: 8%; margin-bottom: 3rem;">
                 <span class="d-flex align-i-center" id="lang">
-                    <i class="fa-solid fa-earth-americas fa-xs" style="color: #f6f7f8;"></i>
+                    <i class="fa-solid fa-earth-americas fa-xs "></i>
                     Italiano
-                    <i class="fa-solid fa-angle-up fa-2xs" style="color: #fafafa;"></i>
+                    <i class="fa-solid fa-angle-up fa-2xs2"></i>
                 </span>
             </div>
     </footer>

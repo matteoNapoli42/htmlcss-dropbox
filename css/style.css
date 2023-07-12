@@ -166,6 +166,9 @@ ul{
     justify-content: center;
 }
 
+.subscription-min-height{
+    height: 975px;
+}
 
 /* HEADER ZONE*/
 header{
@@ -255,6 +258,21 @@ header a{
 
 /* SUBSCRIPTION ZONE*/
 
+.mon-sub{
+    border-radius: 50%;
+    border: solid #0463fd 5px;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
+.year-sub{
+    border-radius: 50%;
+    border: solid grey 2px;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
 
 .container-sc{
     width: 100%;
@@ -265,7 +283,7 @@ header a{
 #sub-options{
     margin-top: 5rem;
     margin-bottom: 3rem;
-    display: block;
+    
 }
 
 #sub-options>span{
@@ -292,6 +310,7 @@ header a{
     border-bottom: 0px;
     border-color: grey;
     border-style: ridge;
+    padding: 15px;
 }
 
 .one-fourth{
@@ -326,10 +345,6 @@ header a{
     padding: 10px;
     background-color: var(--drbx-accent);
     color: white;
-}
-
-.sub-padding-bot{
-    padding-bottom: 3.5rem;
 }
 
 #special-sub{
@@ -378,13 +393,13 @@ header a{
 /* END PARTNER ZONE*/
 
 
-/* SECOND SECTION ZONE*/
+/* DROPBOX BUSINESS SECTION ZONE*/
 
 #ssec-title{
     margin-bottom: 4.5rem;
 }
 
-/* END SECOND SECTION ZONE*/
+/* END DROPBOX BUSINESS SECTION ZONE*/
 
 
 /* FAMOUS USERS ZONE*/
@@ -456,13 +471,14 @@ header a{
 
 #free-trial-2 h1{
     margin-right: 7rem;
+    color: #61092d;
 }
 
 #free-trial-2 a{
     position: absolute;
     top: 9.3rem;
     padding: 10px;
-    width: 33%;
+    width: 30%;
 }
 /* END FREE TRIAL ZONE */
 
@@ -472,6 +488,10 @@ header a{
 
 /*FAQ ZONE*/
 
+.faq{
+    border-bottom: 1px solid black;
+    padding-bottom: 2.5rem;
+}
 
 
 /*END FAQ ZONE*/
@@ -480,7 +500,7 @@ header a{
 footer{
     background-color: black;
     color: white;
-    padding-bottom: 10rem;
+    padding-bottom: 3.5rem;
 }
 
 .footer-list h1{
@@ -494,12 +514,15 @@ footer{
     line-height: 2rem;
 }
 
-#lang i{
-    margin-right: 10px;
-}
 
 #lang{
     font-size: larger;
+    gap: 10px;
+    color: grey;
+}
+
+#lang i{
+    color: grey;
 }
 /*END FOOTER*/
 
@@ -516,13 +539,23 @@ footer{
     color: white;
 }
 
-nav a:hover{
+nav a:not(#start-link):hover{
     border-bottom: 2px solid black;
+    padding-bottom: 1.7rem;
+}
+
+#start-link:hover::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 63px;
+    background: black;
+    top: 5rem;
 }
 
 .faq p{
     display: none;
-    
 }
 
 .faq:hover p{
@@ -530,9 +563,9 @@ nav a:hover{
     padding-top: 2.5rem;
 }
 
-
 .faq:hover i{
     transform: rotate(180deg);
     transition: 0.2s;
 }
+
 /* END ANIMATION ZONE*/
