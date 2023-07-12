@@ -472,10 +472,7 @@ header a{
 
 /*FAQ ZONE*/
 
-#faq{
-    font-size: 110%;
-    font-weight: 700;
-}
+
 
 /*END FAQ ZONE*/
 
@@ -523,4 +520,19 @@ nav a:hover{
     border-bottom: 2px solid black;
 }
 
+.faq p{
+    display: none;
+    
+}
+
+.faq:hover p{
+    display: block;
+    padding-top: 2.5rem;
+}
+
+
+.faq:hover i{
+    transform: rotate(180deg);
+    transition: 0.2s;
+}
 /* END ANIMATION ZONE*/
