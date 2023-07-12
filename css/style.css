@@ -13,6 +13,7 @@ body{
 ul{
     list-style: none;
 }
+
 /* DEBUG ZONE*/
 
 .debug header{
@@ -75,15 +76,32 @@ ul{
     margin: 0 auto;
 }
 
-.row{
-    width: 130%;
+.color-white{
+    color:white;
 }
+
+.text-dec-none{
+    text-decoration: none;
+}
+
+.color-blue-links{
+    color: #232cf1;
+}
+
+.row{
+    width: 100%;   
+}
+
 .col-8{
     width: calc(100% / 12*8);
 }
 
 .col-4{
-    width: 33%;
+    width: calc(100% / 12*4);
+}
+
+.col-6{
+    width: calc(100% / 12*6);
 }
 
 .d-flex{
@@ -92,6 +110,10 @@ ul{
 
 .f-end{
     align-items: flex-end;
+}
+
+.align-i-center{
+    align-items: center;
 }
 
 .s-between{
@@ -122,14 +144,43 @@ ul{
     height: 50%;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.float-left{
+    float: left;
+}
+
+.w-60{
+    width: 60%;
+}
+
+.svg-invert{
+    filter: invert();
+}
+
+.j-center{
+    justify-content: center;
+}
+
+
 /* HEADER ZONE*/
 header{
-    padding-bottom: 1.5rem;
+    padding: 1.7rem 0rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: large;
 }
 
 .lateral-nav{
@@ -137,15 +188,13 @@ nav{
 }
 
 #logo-zone{
-    margin-top: 1.5rem;
-    margin-left: 10px;
     justify-content: space-around;
     align-items: center;
 }
 
 #login-zone{
-    margin-top: 1.5rem;
     justify-content: space-around;
+    align-items: center;
 }
 
 #login-zone button{
@@ -178,6 +227,7 @@ header a{
 #jumbo-title{
     font-size: 500%;  
 }
+
 #jumbo-freet{
     padding-top: 4.5rem;
     font-size: larger;
@@ -190,6 +240,9 @@ header a{
 
 #free-trial{
     margin: 1.5rem 0rem;
+    font-size: medium;
+    text-align: center;
+    text-decoration: none;
 }
 
 #pd-arrow{
@@ -201,6 +254,8 @@ header a{
 /* END JUMBO ZONE*/
 
 /* SUBSCRIPTION ZONE*/
+
+
 .container-sc{
     width: 100%;
     margin: 15rem auto;
@@ -225,6 +280,7 @@ header a{
     margin-top: 5rem;
     gap: 3rem;
     width: 100%;
+
 }
 
 .customer{
@@ -238,11 +294,29 @@ header a{
     border-style: ridge;
 }
 
-.one-third{
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.one-fourth{
+    margin-top: 39px;
+    gap: 20px;
+}
+
+.two-fourth{
+    margin-top: 57px;
+    gap: 27px;
+}
+
+.three-fourth{
+    margin-top: 47px ;
+    gap: 38px;
+
+}
+
+.fourth-fourth{
+    margin-top: 53px;
+    gap: 24px;
+}
+
+.fourth-fourth>h4{
+    padding-top: 40px;
 }
 
 .buttons{
@@ -269,29 +343,40 @@ header a{
 
 #contact-button{
     position: absolute;
+    text-align: center;
     right: 30rem;
 }
 
-
 /* END SUBSCRIPTION ZONE*/
 
-/* FIRST SECTION ZONE*/
+/* PARTNER ZONE*/
 
 #findPartner-img{
     height: 500px;
 }
+
 #findPartner{
-    padding-top: 2.5rem;
-    gap: 2.5rem;
+    margin-left: -1.5rem;
+    font-size: medium;
+    padding-top: 3rem;
 }
 
-#partner-button{
-    width: 40%;
-    padding: 5px;
-    border: solid black 2px;
+#findPartner p{
+    margin-top: 1rem ;
+    margin-bottom: 2rem;
+}
+
+.outliner-button{
+    color: black;
+    text-align: center;
+    width: 55%;
+    padding: 7px;
+    border: solid black 1px;
     background-color: white;
 }
-/* END FIRST SECTION ZONE*/
+
+/* END PARTNER ZONE*/
+
 
 /* SECOND SECTION ZONE*/
 
@@ -304,6 +389,57 @@ header a{
 
 /* FAMOUS USERS ZONE*/
 
+.m-height{
+    min-height: 326px;
+}
+
+.p-rel{
+    position: relative;
+}
+
+#p1{
+    border: 1rem solid #d1e9cd;
+    background-color: #A3D39A;
+}
+
+#p2{
+    background-color: var(--drbx-square2-alternativeFont);
+}
+
+#p3{
+    background-color: #0093ce;
+}
+
+#p3>img{
+    height: 10%;
+}
+
+#p4{
+    background-color: #FE1C1D;
+}
+
+#p5{
+    gap: 3.1rem;
+    padding: 3rem;
+    background-color: #f5f5f5;
+    font-size: large;
+}
+
+#p6{
+    background-color:   #FE1C1D;
+}
+
+#p7{
+    background-color: #b4d0e7
+}
+
+#p8{
+    background-color: #0d2481;
+}
+
+#p9{
+    background-color: #ffd830;
+}
 
 
 /* END FAMOUS USERS ZONE*/
@@ -312,6 +448,7 @@ header a{
 
 /* FREE TRIAL ZONE */
 #free-trial-2{
+    margin-top: -0.7px;
     background-color: #b4d0e7;
     position: relative;
     padding: 140px 0px;
@@ -321,14 +458,26 @@ header a{
     margin-right: 7rem;
 }
 
-#free-trial-2 button{
+#free-trial-2 a{
     position: absolute;
-    top: 10rem;
+    top: 9.3rem;
     padding: 10px;
-    background-color: white;
     width: 33%;
 }
 /* END FREE TRIAL ZONE */
+
+#free-trial-2 a{
+    text-decoration: none;
+}
+
+/*FAQ ZONE*/
+
+#faq{
+    font-size: 110%;
+    font-weight: 700;
+}
+
+/*END FAQ ZONE*/
 
 /* FOOTER*/
 footer{
@@ -347,4 +496,31 @@ footer{
     text-decoration: none;
     line-height: 2rem;
 }
+
+#lang i{
+    margin-right: 10px;
+}
+
+#lang{
+    font-size: larger;
+}
 /*END FOOTER*/
+
+
+
+/* ANIMATION ZONE*/
+
+.opacity:hover{
+    opacity: 0.7;
+}
+
+.outliner-button:hover{
+    background-color: black;
+    color: white;
+}
+
+nav a:hover{
+    border-bottom: 2px solid black;
+}
+
+/* END ANIMATION ZONE*/

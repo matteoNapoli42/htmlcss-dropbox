@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Mulish:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,10 @@
 </head>
 <body>
     <header>
-        <nav> 
+        <nav class="d-flex s-between">  
             <div class="lateral-nav">
                 <ul class="d-flex" id="logo-zone">
-                    <li><img src="/img/logo-small.png" alt=""></li>
+                    <li><img src="./img/logo-small.png" alt=""></li>
                     <li><a href="#">Perchè Dropbox</a></li>
                     <li><a href="#">Funzioni</a></li>
                     <li><a href="#">Piani e prezzi</a></li>
@@ -25,9 +25,8 @@
                     <li><a href="">Supporto</a></li>
                     <li><a href="#">Contatta l'ufficio vendite</a></li>
                     <li><a href="#">Accedi</a></li>
-                    <li><button class="buttons" id="start-button"> Inizia</button></li>
+                    <li><a  href="#" class="buttons opacity" id="start-button"> Inizia</a></li>
                 </ul>
-
             </div>
         </nav>
     </header>
@@ -46,19 +45,20 @@
                             archiviazione sicuro: è un modo intelligente e integrato per ottimizzare
                             il flusso di lavoro esistente
                         </p>
-                        <button class="buttons" id="free-trial">Inizia la tua prova gratuita</button>
+                        <a href="#" class="buttons opacity" id="free-trial">Inizia la tua prova gratuita</a>
                         <span>Annulla in qualsiasi momento</span>
                         <div id="pd-arrow">
                             <i class="fa-solid fa-arrow-down"></i>
                         </div>
                     </div>
                     <div class="col-8">
-                        <img id="jumbo-img" src="/img/jumbo.png" alt="">
+                        <img id="jumbo-img" src="./img/jumbo.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
         
+        <!--SUBSCRIPTION PLANS-->
         <section id="subscription" class="container-sc d-flex">
             <div>
                 <h1 class="f-size">
@@ -75,10 +75,10 @@
                     </span>
                 </div>
                 
-                <!--SUBSCRIPTION PLANS-->
+                
                 <div class="row d-flex" id="plans"> 
-                     <!--FIRST SUBSCRIPTION PLAN-->
-                    <div class="col-4">
+                    <!--FIRST SUBSCRIPTION PLAN-->
+                    <div class="col-4" style="height: 100%;">
                          <div class="customer">
                              <span>
                                 <i class="fa-solid fa-user"></i>
@@ -86,14 +86,14 @@
                             </span>
                         </div>
 
-                        <div class="sub-padd bord-style sub-padding-bot">
-                            <div class="one-third">
+                        <div class="sub-padd bord-style ">
+                            <div class="one-fourth d-col">
                                 <h2>Professional</h2>
                                 <strong>12,00€</strong>
                                 <i>/mese</i>
                             </div>
     
-                            <div class="one-third">
+                            <div class="two-fourth d-col">
                                 <span>
                                     <i class="fa-solid fa-user"></i>
                                     Utente
@@ -102,19 +102,19 @@
                                     <i class="fa-solid fa-folder"></i>
                                     5 TB di spazio di archiviazione sicuro
                                 </span>
-                                <span>
+                                <span">
                                     <i class="fa-solid fa-share-nodes"></i>
-                                    Funzioni di produttività premium e condivisione
-                                    file semplice e sicura
+                                        Funzioni di produttività premium e condivisione
+                                        file semplice e sicura
                                 </span>
                             </div>
-                            <div class="one-third">
-                                <button class="buttons">Prova Gratis per 30 giorni</button>
-                                <span>oppure <a href="">acquista ora</a></span>
+                            <div class="three-fourth d-col">
+                                <a href="#" class="buttons opacity text-dec-none">Prova Gratis per 30 giorni</a>
+                                <span>oppure <a href="" class="color-blue-links">acquista ora</a></span>
                                 <hr style="width: 15%;">
                             </div>
                                 
-                             <div class="one-third">
+                             <div class="fourth-fourth d-col">
                                 <h4>Punti salienti del piano</h4>
                                 <span>
                                     <i class="fa-solid fa-check" style="color: #125fe2;"></i>
@@ -138,12 +138,12 @@
                                </span>
                         </div>
                         <div class="sub-padd bord-style">
-                            <div class="one-third">
+                            <div class="one-fourth d-col">
                                 <h2>Advanced</h2>
                                <strong>18.00€</strong>
                                <i>/utente/mese</i>
                            </div>
-                           <div class="one-third">
+                           <div class="two-fourth d-col">
                                <span>
                                    <i class="fa-solid fa-people-group"></i>
                                    3 o più utenti
@@ -158,12 +158,12 @@
                                    al sicuro tutti i file del tuo team
                                </span>
                            </div>  
-                           <div class="one-third">
-                               <button class="buttons">Prova Gratis per 30 giorni</button>
-                               <span>oppure <a href="">acquista ora</a></span>
+                           <div class="three-fourth d-col">
+                            <a href="#" class="buttons opacity text-dec-none ">Prova Gratis per 30 giorni</a>
+                               <span>oppure <a href="" class="color-blue-links">acquista ora</a></span>
                                <hr style="width: 15%;">
                            </div>
-                           <div class="one-third">
+                           <div class="fourth-fourth  d-col">
                                <h4>Punti salienti del piano</h4>
                                <span>
                                    <i class="fa-solid fa-check" style="color: #125fe2;"></i>
@@ -172,6 +172,19 @@
                                <span>
                                    <i class="fa-solid fa-check" style="color: #125fe2;"></i>
                                    Cartelle offline su dispositivi mobili
+                               </span>
+                               <span>
+                                    <i class="fa-solid fa-check" style="color: #125fe2;"></i>
+                                    Risparmio del 50% rispetto alle iscrizioni singole
+                               </span>
+                               <span>
+                                    <i class="fa-solid fa-check" style="color: #125fe2;"></i>
+                                    Possibilità di inserire nuovi membri del team
+                               </span>
+                               <span>
+                                    <i class="fa-solid fa-check" style="color: #125fe2;"></i>
+                                    Gestione dei permessi in base ai ruoli
+
                                </span>
                            </div>
                         </div>
@@ -180,7 +193,7 @@
                      <!-- END SECOND SUBSCRIPTION PLAN-->
                     
                      <!-- THIRD SUBSCRIPTION PLAN-->
-                     <div class="col-4 ">
+                    <div class="col-4 ">
                         <div class="customer">
                             <span>
                                 <i class="fa-solid fa-user"></i>
@@ -188,47 +201,49 @@
                                </span>
                         </div>
                         <div class="sub-padd bord-style">
-                            <div class="one-third">
-                                <h2>Professional</h2>
-                               <strong>12,00€</strong>
-                               <i>/mese</i>
-                           </div>
-                           <div class="one-third">
-                               <span>
+                            <div class="one-fourth d-col">
+                                <h2>Enterprise</h2>
+                               <strong>Contattaci</strong>
+                               <i>-</i>
+                            </div>
+                            <div class="two-fourth d-col">
+                                <span>
                                    <i class="fa-solid fa-user"></i>
-                                   Utente
-                               </span>
-                               <span>
+                                   10 o più utenti
+                                </span>
+                                <span>
                                    <i class="fa-solid fa-folder"></i>
-                                   5 TB di spazio di archiviazione sicuro
-                               </span>
-                               <span>
-                                   <i class="fa-solid fa-share-nodes"></i>
-                                   Funzioni di produttività premium e condivisione
-                                   file semplice e sicura
-                               </span>
-                           </div>  
-                           <div class="one-third">
-                               <button class="buttons">Prova Gratis per 30 giorni</button>
-                               <span>oppure <a href="">acquista ora</a></span>
+                                   Soluzioni personalizzabili per la tua azienda
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    Sofisticate funzioni di controllo e per tenere
+                                    al sicuro tutti i file del tuo team
+                                </span>
+                            </div>  
+                            <div class="three-fourth d-col">
+                                <a href="#" class="buttons opacity text-dec-none">Prova Gratis per 30 giorni</a>
+                               <span>oppure <a href="" class="color-blue-links">acquista ora</a></span>
                                <hr style="width: 15%;">
-                           </div>
-                           <div class="one-third">
-                               <h4>Punti salienti del piano</h4>
-                               <span>
+                            </div>
+                            <div class="fourth-fourth d-col">
+                                <h4>Punti salienti del piano</h4>
+                                <span>
                                    <i class="fa-solid fa-check" style="color: #125fe2;"></i>
-                                   Invia File fino a 100GB con Dropbox Transfert
-                               </span>
-                               <span>
+                                   Cartelle offline su dispositivi mobile
+                                </span>
+                                <span>
                                    <i class="fa-solid fa-check" style="color: #125fe2;"></i>
-                                   Cartelle offline su dispositivi mobili
-                               </span>
-                           </div>
-                         </div>
+                                   Servizio assistenza h24
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-check" style="color: #125fe2;"></i>
+                                    Possibilità di personalizzazione totale
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- END THIRD SUBSCRIPTION PLAN-->
-                
                 <!-- SPECIAL SUBSCRIPTION PLAN-->
                 <div class="row" id="special-sub">
                     <div class="customer">
@@ -246,20 +261,18 @@
                                 Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella 
                                 gestione su qualsiasi scala
                             </span> 
-                            <button class="buttons" id="contact-button">Contatta l'ufficio vendite</button>
+                            <a href="#" class="buttons opacity text-dec-none" id="contact-button">Contatta l'ufficio vendite</a>
                         </div>
-                        
                     </div>
-                    <!-- Da completare-->
                 </div>
-                <!-- END SPECIAL SUBSCRIPTION PLAN-->
-            
             </div>
         </section>
-
+        <!--END SUBSCRIPTION PLANS-->
+        
+        <!--PARTNER SECTION-->
         <section class="container-sc d-flex">
             <div class="col-8" >
-                <img id="findPartner-img" src="/img/partner.png" alt="">
+                <img id="findPartner-img" src="./img/partner.png" alt="">
                 </div>
             <div class="col-4 d-col" id="findPartner">
                 <h1>
@@ -271,16 +284,17 @@
                     i tuoi obiettivi aziendali, tra cui implementazione,
                     integrazione,gestione e supporto continui
                 </p>
-                <button id="partner-button">Trova un partner</button>
+                <a href="#" class="text-dec-none invertB outliner-button">Trova un partner</a>
             </div>
         </section>
+        <!-- END PARTNER SECTION-->
 
-        <!-- SECOND SECTION-->
+        <!-- DROPBOX BUSINESS SECTION-->
         <section class="container-sc">
             <h1 class="f-size" id="ssec-title">Esegui più operazioni con Dropbox business</h1>
             <div class="d-flex gap">
                 <div class="col-4 d-col gap">
-                    <img src="/img/business-feature-switching-tools.png" alt="">
+                    <img src="./img/business-feature-switching-tools.png" alt="">
                     <h3>Passa di meno da uno strumento all'altro</h3>
                     <p>
                         Porta a termine le attività quotidiane con un solo strumento.
@@ -290,7 +304,7 @@
                     </p>
                  </div>
                  <div class="col-4 d-col gap">
-                    <img src="/img/business-feature-send-files-it.png" alt="">
+                    <img src="./img/business-feature-send-files-it.png" alt="">
                     <h3>Passa di meno da uno strumento all'altro</h3>
                     <p>
                         Porta a termine le attività quotidiane con un solo strumento.
@@ -300,7 +314,7 @@
                     </p>
                  </div>
                  <div class="col-4 d-col gap">
-                    <img src="/img/business-feature-coordinate-it.png" alt="">
+                    <img src="./img/business-feature-coordinate-it.png" alt="">
                     <h3>Passa di meno da uno strumento all'altro</h3>
                     <p>
                         Porta a termine le attività quotidiane con un solo strumento.
@@ -313,7 +327,7 @@
             
             <div class="d-flex gap" style="margin-top: 3rem;">
                 <div class="col-4 d-col gap">
-                    <img src="/img/business-feature-integrations-it.png" alt="">
+                    <img src="./img/business-feature-integrations-it.png" alt="">
                     <h3>Passa di meno da uno strumento all'altro</h3>
                     <p>
                         Porta a termine le attività quotidiane con un solo strumento.
@@ -323,7 +337,7 @@
                     </p>
                  </div>
                  <div class="col-4 d-col gap">
-                    <img src="/img/business-feature-multi-device.png" alt="">
+                    <img src="./img/business-feature-multi-device.png" alt="">
                     <h3>Passa di meno da uno strumento all'altro</h3>
                     <p>
                         Porta a termine le attività quotidiane con un solo strumento.
@@ -333,7 +347,7 @@
                     </p>
                  </div>
                  <div class="col-4 d-col gap">
-                    <img src="/img/business-feature-security.png"  alt=""">
+                    <img src="./img/business-feature-security.png"  alt=""">
                     <h3>Passa di meno da uno strumento all'altro</h3>
                     <p>
                         Porta a termine le attività quotidiane con un solo strumento.
@@ -344,7 +358,7 @@
                  </div>
             </div>
         </section>
-         <!-- END SECOND SECTION-->
+         <!-- END DROPBOX BUSINESS SECTION-->
         
          <!-- THIRD SECTION-->
          <section class="container-sc">
@@ -355,28 +369,63 @@
          </section>
          <!-- END THIRD SECTION-->
          
-         <!-- PARTNER SHOW
-            <div>
-                <div class="col-4 ">
-                    <div class="d-flex">
-                        <div class="cubes" id="c1">
-                            <img src="/img/designit.svg" alt="">
-                        </div>
-                        <div class="cubes" id="c2">
-                            <img src="/img/arizona_state_university.svg" alt="">
-                        </div>
+         <!-- FAMOUS PARTNERS-->
+        <div id="#famous-partners" class="d-flex">
+            <div class="col-4">
+                <div class="row d-flex">
+                    <div class="col-6 m-height d-flex j-center align-i-center" id="p1">
+                        <img class="w-60 svg-invert" src="./img/designit.svg" alt="">
                     </div>
-                    <div class="d-flex" id="c3">
-                        <div class="cubes">
-                            <img src="/img/designit.svg" alt="">
-                        </div>
-                        <div class="cubes" id="c1">
-                            <img src="/img/arizona_state_university.svg" alt="">
-                        </div>
+                    <div class="col-6 m-height d-flex j-center align-i-center" id="p2">
+                        <img class="w-60 svg-invert" src="./img/arizona_state_university.svg" alt="">
+                    </div>
+                </div>
+                <div class="row d-flex">
+                    <div class="col-6 m-height d-flex j-center align-i-center" id="p3">
+                         <img class="w-60 svg-invert" src="./img/university_of_florida.svg" alt="">
+                    </div>
+                    <div class="col-6 m-height d-flex j-center align-i-center" id="p4">
+                        <img class="w-60 svg-invert" src="./img/topps.svg" alt="">
                     </div>
                 </div>
             </div>
-         END PARTNER SHOW-->
+            <div class="col-4 d-col" id="p5">
+                <img class="w-60" src="./img/designit.svg" alt="">
+                <div>
+                    <hr style="width: 15%;">
+                </div>
+                <div>
+                    <p>
+                       "I membri del nostro team lavorano costantemente in Paesi, fusi orari e 
+                        uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma 
+                        nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono 
+                        compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper."
+                    </p>
+                </div>
+                <div>
+                    <span>Morten Thomsen, Global IT Lead</span>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row d-flex ">
+                    <div class="col-6 m-height p-rel d-flex j-center align-i-center" id="p6">
+                        <img  class="w-60 svg-invert" src="./img/world_bicycle_relief.svg" alt="">
+                    </div>
+                    <div class="col-6 m-height p-rel d-flex j-center align-i-center" id="p7">
+                        <img class="w-60 svg-invert" src="./img/hearst_corp.svg" alt="">
+                    </div>
+                </div>
+                <div class="row d-flex">
+                    <div class="col-6 m-height p-rel d-flex j-center align-i-center" id="p8">
+                         <img class="w-60 svg-invert" src="./img/lonely_planet.svg" alt="">
+                    </div>
+                    <div class="col-6 m-height p-rel d-flex j-center a" id="p9">
+                        <img class="w-60 svg-invert" src="./img/clear_channel.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- END FAMOUS PARTNERS-->
 
          <!--FREE TRIAL-->
          <div style="background-color: #b4cfe5;">
@@ -385,7 +434,7 @@
                     <h1 class="f-size">Porta Dropbox business nella tua azienda</h1>
                 </div>
                <div class="col-4">
-                    <button>Inizia ora la tua prova gratuita</button>
+                    <a href="#" class="outliner-button" >Inizia ora la tua prova gratuita</a>
                </div>
             </div>
         </div>
@@ -397,9 +446,21 @@
                 <hr>
                 <div class="d-flex s-between">
                     <span>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
-                    <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
+                    <i class="fa-sharp fa-solid fa-angle-down"></i>
+                    <div class="dropdown-menu">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quod at distinctio saepe eaque vel minima rerum magnam sunt dolorem laboriosam doloremque veritatis molestias, ullam fuga esse, et fugiat inventore!
+                        </p>
+                    </div>
                 </div>
                 <hr>
+               
+               
+               
+               
+               
+               
+               
                 <div class="d-flex s-between">
                     <span>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
                     <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
@@ -410,8 +471,6 @@
                     <span><i class="fa-sharp fa-solid fa-angle-down"></i></span>
                 </div>
                 <hr>
-
-
             </div>
          <!-- END Q&A-->
     </main>
@@ -429,7 +488,7 @@
           </div>
           <div>
             <ul class="footer-list">
-                <li><h1>Dropbox</h1></li>
+                <li><h1>Prodotti</h1></li>
                 <li><a href="">Applicazione desktop</a></li>
                 <li><a href="">Perche' dropbox</a></li>
                 <li><a href="">Piani</a></li>
@@ -439,7 +498,7 @@
           </div>
           <div>
             <ul class="footer-list">
-                <li><h1>Dropbox</h1></li>
+                <li><h1>Azienda</h1></li>
                 <li><a href="">Applicazione desktop</a></li>
                 <li><a href="">Perche' dropbox</a></li>
                 <li><a href="">Piani</a></li>
@@ -449,7 +508,7 @@
           </div>
           <div>
             <ul class="footer-list">
-                <li><h1>Dropbox</h1></li>
+                <li><h1>Supporto</h1></li>
                 <li><a href="">Applicazione desktop</a></li>
                 <li><a href="">Perche' dropbox</a></li>
                 <li><a href="">Piani</a></li>
@@ -459,7 +518,7 @@
           </div>
           <div>
             <ul class="footer-list">
-                <li><h1>Dropbox</h1></li>
+                <li><h1>Community</h1></li>
                 <li><a href="">Applicazione desktop</a></li>
                 <li><a href="">Perche' dropbox</a></li>
                 <li><a href="">Piani</a></li>
@@ -468,6 +527,14 @@
             </ul>
           </div>
         </div>
+            <div class="jumbo-card">
+                <hr style="width: 8%; margin-bottom: 3rem;">
+                <span class="d-flex align-i-center" id="lang">
+                    <i class="fa-solid fa-earth-americas fa-xs" style="color: #f6f7f8;"></i>
+                    Italiano
+                    <i class="fa-solid fa-angle-up fa-2xs" style="color: #fafafa;"></i>
+                </span>
+            </div>
     </footer>
 </body>
 </html>
